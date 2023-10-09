@@ -339,7 +339,7 @@ class ClassWithPrivateStaticMethod {
   }
 
   static publicStaticMethod() {
-    return this.#privateStaticMethod();
+    return ClassWithPrivateStaticMethod.#privateStaticMethod();
   }
 }
 
